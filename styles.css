@@ -67,6 +67,14 @@ address {
 	--font-body: "Inter", "Segoe UI", sans-serif;
 }
 
+.practice,
+.coordination,
+.contact,
+.domain {
+	padding-top: 7rem;
+	padding-bottom: 7rem;
+}
+
 /* =========================
    BASE
 ========================= */
@@ -158,22 +166,22 @@ p {
 
 .eyebrow {
 	font-family: var(--font-body);
-	font-size: 0.82rem;
+	font-size: 0.84rem;
 	font-weight: 500;
-	letter-spacing: 0.18em;
+	letter-spacing: 0.22em;
 	text-transform: uppercase;
 	color: var(--accent);
-	margin-bottom: 1.5rem;
+	margin-bottom: 1.8rem;
 }
 
 .hero-mantra {
 	font-family: var(--font-body);
-	font-size: 0.9rem;
+	font-size: 0.95rem;
 	font-weight: 600;
-	letter-spacing: 0.18em;
+	letter-spacing: 0.22em;
 	text-transform: uppercase;
-	color: var(--text-soft);
-	margin-top: 2.5rem;
+	color: var(--accent);
+	margin-top: 2.7rem;
 }
 
 .name {
@@ -199,9 +207,9 @@ p {
 ========================= */
 
 .hero {
-	padding-top: 22vh;
-	padding-bottom: 8rem;
-	min-height: 100vh;
+	padding-top: 20vh;
+	padding-bottom: 6rem;
+	min-height: 90vh;
 	display: flex;
 	align-items: flex-start;
 }
@@ -229,6 +237,9 @@ p {
 /* =========================
    MANIFESTO
 ========================= */
+.manifesto {
+	padding-top: 6rem;
+}
 
 .manifesto-copy {
 	display: grid;
@@ -237,12 +248,12 @@ p {
 
 .manifesto-copy p {
 	font-family: var(--font-title);
-	font-size: clamp(1.9rem, 3vw, 2.7rem);
+	font-size: clamp(2rem, 3vw, 2.85rem);
 	font-weight: 400;
-	line-height: 1.35;
-	letter-spacing: -0.02em;
+	line-height: 1.3;
+	letter-spacing: -0.022em;
 	max-width: 22ch;
-	margin-bottom: 1.4rem;
+	margin-bottom: 1.5rem;
 }
 
 /* =========================
@@ -299,24 +310,25 @@ p {
 }
 
 .coordination-text {
-	max-width: 38rem;
+	max-width: 40rem;
 }
 
 .name {
 	font-family: var(--font-title);
-	font-size: clamp(2.6rem, 4vw, 4.2rem);
+	font-size: clamp(2.8rem, 4vw, 4.4rem);
 	font-weight: 500;
 	line-height: 1;
 	letter-spacing: -0.03em;
-	margin-bottom: 1.25rem;
+	margin-bottom: 1.35rem;
+	color: var(--text);
 }
 
 .role {
 	font-family: var(--font-body);
-	font-size: clamp(1.25rem, 1.7vw, 1.4rem);
-	line-height: 1.75;
+	font-size: clamp(1.28rem, 1.6vw, 1.46rem);
+	line-height: 1.8;
 	color: var(--text-soft);
-	max-width: 30ch;
+	max-width: 31ch;
 	margin-top: 0.6rem;
 }
 
@@ -351,14 +363,16 @@ p {
 
 .contact-list a {
 	color: var(--text);
-	border-bottom: 1px solid transparent;
-	transition: color 180ms ease, border-color 180ms ease;
+	border-bottom: 1px solid rgba(184, 154, 94, 0.18);
+	padding-bottom: 0.1rem;
+	transition: color 180ms ease, border-color 180ms ease, letter-spacing 180ms ease;
 }
 
 .contact-list a:hover,
 .contact-list a:focus-visible {
 	color: var(--accent);
-	border-color: rgba(184, 154, 94, 0.45);
+	border-color: rgba(184, 154, 94, 0.5);
+	letter-spacing: 0.01em;
 	outline: none;
 }
 
@@ -374,8 +388,9 @@ p {
 
 .domain-copy p:first-child {
 	font-family: var(--font-title);
-	font-size: clamp(1.5rem, 2.2vw, 2rem);
+	font-size: clamp(1.7rem, 2.2vw, 2.2rem);
 	letter-spacing: -0.02em;
+	color: var(--accent);
 }
 
 .proposal-copy p {
@@ -400,7 +415,7 @@ p {
 	width: 100%;
 	max-width: 900px;
 	height: 1px;
-	margin: 120px auto;
+	margin: 80px auto;
 	background: linear-gradient(to right,
 			transparent,
 			rgba(200, 169, 107, 0.35),
@@ -411,10 +426,12 @@ p {
    RESPONSIVE
 ========================= */
 
+
+
 @media (max-width: 900px) {
 
 	:root {
-		--section-space: 8rem;
+		--section-space: 5rem;
 		--hero-space-top: 7rem;
 		--hero-space-bottom: 5rem;
 	}
