@@ -45,15 +45,19 @@ address {
 :root {
 	--bg: #0b0b0b;
 	--bg-soft: #111111;
-	--text: #ece8e1;
+
+	--text: #eae3d6;
 	--text-soft: #a6a19a;
-	--line: rgba(236, 232, 225, 0.12);
+
+	/* linhas douradas sutis */
+	--line: rgba(184, 154, 94, 0.25);
+
 	--accent: #b89a5e;
 
 	--container-width: 1200px;
 	--container-narrow: 760px;
 
-	--section-space: 12rem;
+	--section-space: 8rem;
 	--hero-space-top: 10rem;
 	--hero-space-bottom: 8rem;
 
@@ -66,20 +70,30 @@ address {
 /* =========================
    BASE
 ========================= */
+
 html {
 	background-color: var(--bg);
 }
 
 body {
 	min-height: 100vh;
+
+	/* FUNDO ARQUITETÔNICO */
 	background:
-		linear-gradient(to bottom, rgba(255, 255, 255, 0.015), rgba(255, 255, 255, 0)),
-		var(--bg);
+		linear-gradient(rgba(11, 11, 11, 0.92),
+			rgba(11, 11, 11, 0.96)),
+		url("./bg-architecture.jpeg");
+
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+
 	color: var(--text);
 	font-family: var(--font-body);
 	font-size: 16px;
 	line-height: 1.65;
 	letter-spacing: 0.01em;
+
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 }
@@ -110,6 +124,7 @@ section+section .container {
 /* =========================
    TYPOGRAPHY
 ========================= */
+
 h1,
 h2,
 .eyebrow,
@@ -147,7 +162,7 @@ p {
 	font-weight: 500;
 	letter-spacing: 0.18em;
 	text-transform: uppercase;
-	color: var(--text-soft);
+	color: var(--accent);
 	margin-bottom: 1.5rem;
 }
 
@@ -171,14 +186,18 @@ p {
 }
 
 .role {
-	font-size: 1rem;
+	font-family: var(--font-body);
+	font-size: clamp(1.25rem, 1.6vw, 1.45rem);
+	line-height: 1.65;
 	color: var(--text-soft);
-	max-width: 42ch;
+	max-width: 32ch;
+	margin-top: 0.6rem;
 }
 
 /* =========================
    HERO
 ========================= */
+
 .hero {
 	padding-top: 22vh;
 	padding-bottom: 8rem;
@@ -210,6 +229,7 @@ p {
 /* =========================
    MANIFESTO
 ========================= */
+
 .manifesto-copy {
 	display: grid;
 	gap: 1rem;
@@ -221,13 +241,14 @@ p {
 	font-weight: 400;
 	line-height: 1.35;
 	letter-spacing: -0.02em;
-	max-width: 20ch;
+	max-width: 22ch;
 	margin-bottom: 1.4rem;
 }
 
 /* =========================
    PRACTICE
 ========================= */
+
 .practice-list {
 	display: grid;
 	gap: 1.25rem;
@@ -240,7 +261,7 @@ p {
 	line-height: 1.4;
 	letter-spacing: -0.01em;
 	margin-bottom: 1.8rem;
-	color: var(--text-main);
+	color: var(--text);
 	list-style: none;
 }
 
@@ -253,12 +274,13 @@ p {
 /* =========================
    COORDINATION
 ========================= */
+
 .coordination-content {
 	display: grid;
-	grid-template-columns: 220px 1fr;
-	gap: 2.5rem;
-	align-items: start;
-	max-width: 900px;
+	grid-template-columns: 320px 1fr;
+	gap: 4.5rem;
+	align-items: center;
+	max-width: 1100px;
 }
 
 .profile-photo {
@@ -273,12 +295,50 @@ p {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	filter: grayscale(100%) contrast(1.02);
+	filter: grayscale(100%) contrast(1.05) brightness(0.92);
+}
+
+.coordination-text {
+	max-width: 38rem;
+}
+
+.name {
+	font-family: var(--font-title);
+	font-size: clamp(2.6rem, 4vw, 4.2rem);
+	font-weight: 500;
+	line-height: 1;
+	letter-spacing: -0.03em;
+	margin-bottom: 1.25rem;
+}
+
+.role {
+	font-family: var(--font-body);
+	font-size: clamp(1.25rem, 1.7vw, 1.4rem);
+	line-height: 1.75;
+	color: var(--text-soft);
+	max-width: 30ch;
+	margin-top: 0.6rem;
 }
 
 /* =========================
    CONTACT
 ========================= */
+
+.contact-title {
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	font-size: 0.85rem;
+	color: var(--accent);
+	margin-bottom: 28px;
+}
+
+.contact a,
+.contact p {
+	display: block;
+	margin-bottom: 14px;
+	font-size: 1.05rem;
+}
+
 .contact-list {
 	display: grid;
 	gap: 1rem;
@@ -305,6 +365,7 @@ p {
 /* =========================
    DOMAIN / PROPOSAL
 ========================= */
+
 .domain-copy,
 .proposal-copy {
 	display: grid;
@@ -329,17 +390,31 @@ p {
 /* =========================
    SELECTION
 ========================= */
+
 ::selection {
 	background-color: rgba(184, 154, 94, 0.25);
 	color: var(--text);
 }
 
+.divider {
+	width: 100%;
+	max-width: 900px;
+	height: 1px;
+	margin: 120px auto;
+	background: linear-gradient(to right,
+			transparent,
+			rgba(200, 169, 107, 0.35),
+			transparent);
+}
+
 /* =========================
    RESPONSIVE
 ========================= */
+
 @media (max-width: 900px) {
+
 	:root {
-		--section-space: 6rem;
+		--section-space: 8rem;
 		--hero-space-top: 7rem;
 		--hero-space-bottom: 5rem;
 	}
@@ -351,11 +426,16 @@ p {
 
 	.coordination-content {
 		grid-template-columns: 1fr;
-		gap: 1.75rem;
+		gap: 2rem;
+		align-items: start;
 	}
 
 	.profile-photo {
-		max-width: 240px;
+		max-width: 300px;
+	}
+
+	.coordination-text {
+		max-width: 100%;
 	}
 }
 
@@ -376,5 +456,14 @@ p {
 
 	.practice-list li {
 		padding-left: 1rem;
+	}
+
+	.name {
+		font-size: clamp(2.2rem, 10vw, 3.2rem);
+	}
+
+	.role {
+		font-size: 1.1rem;
+		line-height: 1.7;
 	}
 }
