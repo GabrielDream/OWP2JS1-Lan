@@ -21,45 +21,69 @@
 
 <body>
 	<main class="page">
+		<nav class="language-switcher" aria-label="Seleção de idioma">
+			<button type="button" class="lang-btn is-active" data-lang="pt-BR" aria-label="Selecionar português"
+				aria-pressed="true">
+				<img src="./assets/flags/br.svg" alt="" />
+				<span>PT</span>
+			</button>
+			<button type="button" class="lang-btn" data-lang="en-US" aria-label="Select English" aria-pressed="false">
+				<img src="./assets/flags/us.svg" alt="" />
+				<span>EN</span>
+			</button>
+			<button type="button" class="lang-btn" data-lang="es-ES" aria-label="Seleccionar español" aria-pressed="false">
+				<img src="./assets/flags/es.svg" alt="" />
+				<span>ES</span>
+			</button>
+			<button type="button" class="lang-btn" data-lang="zh-CN" aria-label="选择中文" aria-pressed="false">
+				<img src="./assets/flags/cn.svg" alt="" />
+				<span>中文</span>
+			</button>
+			<button type="button" class="lang-btn" data-lang="ar-SA" aria-label="اختر العربية" aria-pressed="false">
+				<img src="./assets/flags/sa.svg" alt="" />
+				<span>AR</span>
+			</button>
+		</nav>
+
 		<section class="hero reveal is-visible" aria-labelledby="hero-title">
 			<div class="container">
-				<p class="eyebrow">Cognisynth Legal Sovereign</p>
+				<p class="eyebrow" data-i18n="eyebrow">Cognisynth Legal Sovereign</p>
 
-				<h1 id="hero-title">Arquitetura jurídica para capital exposto.</h1>
+				<h1 id="hero-title" data-i18n="heroTitle">Arquitetura jurídica para capital exposto.</h1>
 
-				<p class="hero-mantra">Governança. Risco. Execução.</p>
+				<p class="hero-mantra" data-i18n="heroMantra">Governança. Risco. Execução.</p>
 			</div>
 		</section>
 
 		<section class="manifesto reveal" aria-labelledby="manifesto-title">
 			<div class="container container-narrow">
-				<h2 id="manifesto-title">Manifesto</h2>
+				<h2 id="manifesto-title" data-i18n="manifestoTitle">Manifesto</h2>
 
 				<div class="manifesto-copy">
-					<p>Antes de contratos existirem, a arquitetura já foi definida.</p>
-					<p>Estruturas jurídicas não são documentos.</p>
-					<p>São sistemas de decisão, controle e responsabilidade.</p>
-					<p>Quando o capital está exposto, improviso é falha.</p>
+					<p data-i18n="manifesto1">Antes de contratos existirem, a arquitetura já foi definida.</p>
+					<p data-i18n="manifesto2">Estruturas jurídicas não são documentos.</p>
+					<p data-i18n="manifesto3">São sistemas de decisão, controle e responsabilidade.</p>
+					<p data-i18n="manifesto4">Quando o capital está exposto, improviso é falha.</p>
 				</div>
 			</div>
 		</section>
 
 		<section class="practice reveal" aria-labelledby="practice-title">
 			<div class="container">
-				<h2 id="practice-title">Atuação</h2>
+				<h2 id="practice-title" data-i18n="practiceTitle">Atuação</h2>
 
 				<ul class="practice-list">
-					<li>Governança, Riscos e Compliance</li>
-					<li>Smart contracts e estruturas contratuais automatizadas</li>
-					<li>Tokenização e desenho jurídico de ativos digitais</li>
-					<li>Arquitetura de controle para operações complexas</li>
+					<li data-i18n="practice1">Governança, Riscos e Compliance</li>
+					<li data-i18n="practice2">Smart contracts e estruturas contratuais automatizadas</li>
+					<li data-i18n="practice3">Tokenização e desenho jurídico de ativos digitais</li>
+					<li data-i18n="practice4">Arquitetura de controle para operações complexas</li>
 				</ul>
 			</div>
 		</section>
 
 		<section class="coordination reveal" aria-labelledby="coordination-title">
 			<div class="container">
-				<h2 id="coordination-title">Coordenação técnica</h2>
+				<h2 id="coordination-title" data-i18n="coordinationTitle">Coordenação técnica</h2>
 
 				<div class="coordination-content">
 					<figure class="profile-photo">
@@ -67,8 +91,8 @@
 					</figure>
 
 					<div class="coordination-text">
-						<p class="name">— Pedro Soccol —</p>
-						<p class="role">
+						<p class="name" data-i18n="name">— Pedro Soccol —</p>
+						<p class="role" data-i18n="role">
 							Jurista. Arquitetura jurídica e governança de sistemas críticos.
 						</p>
 					</div>
@@ -78,14 +102,15 @@
 
 		<section class="contact reveal" aria-labelledby="contact-title">
 			<div class="container">
-				<h2 id="contact-title" class="contact-title">Contato</h2>
+				<h2 id="contact-title" class="contact-title" data-i18n="contactTitle">Contato</h2>
 
 				<address class="contact-list">
 					<p>
-						<a href="mailto:pedrosoccol100@gmail.com">cognisynth.sol@gmail.com</a>
+						<a href="mailto:pedrosoccol100@gmail.com" data-i18n="emailLabel">cognisynth.sol@gmail.com</a>
 					</p>
 					<p>
-						<a href="https://br.linkedin.com/in/pedrosoccol" target="_blank" rel="noopener noreferrer">
+						<a href="https://br.linkedin.com/in/pedrosoccol" target="_blank" rel="noopener noreferrer"
+							data-i18n="linkedinLabel">
 							LinkedIn: br.linkedin.com/in/pedrosoccol
 						</a>
 					</p>
@@ -95,15 +120,162 @@
 
 		<section class="domain reveal" aria-labelledby="domain-title">
 			<div class="container">
-				<h2 id="domain-title">Domínio</h2>
+				<h2 id="domain-title" data-i18n="domainTitle">Domínio</h2>
 
 				<div class="domain-copy">
-					<p>cognisynthlegal.com</p>
+					<p data-i18n="domainValue">cognisynthlegal.com</p>
 				</div>
 			</div>
 		</section>
 	</main>
 
+	<script>
+		const translations = {
+			"pt-BR": {
+				eyebrow: "Cognisynth Legal Sovereign",
+				heroTitle: "Arquitetura jurídica para capital exposto.",
+				heroMantra: "Governança. Risco. Execução.",
+				manifestoTitle: "Manifesto",
+				manifesto1: "Antes de contratos existirem, a arquitetura já foi definida.",
+				manifesto2: "Estruturas jurídicas não são documentos.",
+				manifesto3: "São sistemas de decisão, controle e responsabilidade.",
+				manifesto4: "Quando o capital está exposto, improviso é falha.",
+				practiceTitle: "Atuação",
+				practice1: "Governança, Riscos e Compliance",
+				practice2: "Smart contracts e estruturas contratuais automatizadas",
+				practice3: "Tokenização e desenho jurídico de ativos digitais",
+				practice4: "Arquitetura de controle para operações complexas",
+				coordinationTitle: "Coordenação técnica",
+				name: "— Pedro Soccol —",
+				role: "Jurista. Arquitetura jurídica e governança de sistemas críticos.",
+				contactTitle: "Contato",
+				emailLabel: "cognisynth.sol@gmail.com",
+				linkedinLabel: "LinkedIn: br.linkedin.com/in/pedrosoccol",
+				domainTitle: "Domínio",
+				domainValue: "cognisynthlegal.com"
+			},
+			"en-US": {
+				eyebrow: "Cognisynth Legal Sovereign",
+				heroTitle: "Legal architecture for exposed capital.",
+				heroMantra: "Governance. Risk. Execution.",
+				manifestoTitle: "Manifesto",
+				manifesto1: "Before contracts exist, the architecture is already defined.",
+				manifesto2: "Legal structures are not documents.",
+				manifesto3: "They are systems of decision, control, and accountability.",
+				manifesto4: "When capital is exposed, improvisation is failure.",
+				practiceTitle: "Practice",
+				practice1: "Governance, Risk, and Compliance",
+				practice2: "Smart contracts and automated contractual structures",
+				practice3: "Tokenization and legal design for digital assets",
+				practice4: "Control architecture for complex operations",
+				coordinationTitle: "Technical coordination",
+				name: "— Pedro Soccol —",
+				role: "Jurist. Legal architecture and governance for critical systems.",
+				contactTitle: "Contact",
+				emailLabel: "cognisynth.sol@gmail.com",
+				linkedinLabel: "LinkedIn: br.linkedin.com/in/pedrosoccol",
+				domainTitle: "Domain",
+				domainValue: "cognisynthlegal.com"
+			},
+			"es-ES": {
+				eyebrow: "Cognisynth Legal Sovereign",
+				heroTitle: "Arquitectura jurídica para capital expuesto.",
+				heroMantra: "Gobernanza. Riesgo. Ejecución.",
+				manifestoTitle: "Manifiesto",
+				manifesto1: "Antes de que existan contratos, la arquitectura ya está definida.",
+				manifesto2: "Las estructuras jurídicas no son documentos.",
+				manifesto3: "Son sistemas de decisión, control y responsabilidad.",
+				manifesto4: "Cuando el capital está expuesto, improvisar es fallar.",
+				practiceTitle: "Actuación",
+				practice1: "Gobernanza, Riesgo y Cumplimiento",
+				practice2: "Smart contracts y estructuras contractuales automatizadas",
+				practice3: "Tokenización y diseño jurídico de activos digitales",
+				practice4: "Arquitectura de control para operaciones complejas",
+				coordinationTitle: "Coordinación técnica",
+				name: "— Pedro Soccol —",
+				role: "Jurista. Arquitectura jurídica y gobernanza de sistemas críticos.",
+				contactTitle: "Contacto",
+				emailLabel: "cognisynth.sol@gmail.com",
+				linkedinLabel: "LinkedIn: br.linkedin.com/in/pedrosoccol",
+				domainTitle: "Dominio",
+				domainValue: "cognisynthlegal.com"
+			},
+			"zh-CN": {
+				eyebrow: "Cognisynth Legal Sovereign",
+				heroTitle: "面向风险资本的法律架构。",
+				heroMantra: "治理。风险。执行。",
+				manifestoTitle: "宣言",
+				manifesto1: "在合同出现之前，架构早已被定义。",
+				manifesto2: "法律结构不是文件。",
+				manifesto3: "它们是决策、控制与问责系统。",
+				manifesto4: "当资本暴露于风险时，临时应对就是失误。",
+				practiceTitle: "业务范围",
+				practice1: "治理、风险与合规",
+				practice2: "智能合约与自动化合同结构",
+				practice3: "数字资产的代币化与法律设计",
+				practice4: "复杂运营的控制架构",
+				coordinationTitle: "技术协调",
+				name: "— Pedro Soccol —",
+				role: "法学专家。关键系统的法律架构与治理。",
+				contactTitle: "联系",
+				emailLabel: "cognisynth.sol@gmail.com",
+				linkedinLabel: "LinkedIn: br.linkedin.com/in/pedrosoccol",
+				domainTitle: "域名",
+				domainValue: "cognisynthlegal.com"
+			},
+			"ar-SA": {
+				eyebrow: "Cognisynth Legal Sovereign",
+				heroTitle: "هندسة قانونية لرأس مال مكشوف.",
+				heroMantra: "حوكمة. مخاطر. تنفيذ.",
+				manifestoTitle: "البيان",
+				manifesto1: "قبل وجود العقود، تكون الهندسة قد تحددت بالفعل.",
+				manifesto2: "الهياكل القانونية ليست وثائق.",
+				manifesto3: "إنها أنظمة قرار وضبط ومساءلة.",
+				manifesto4: "عندما يكون رأس المال مكشوفًا، فالارتجال إخفاق.",
+				practiceTitle: "مجالات العمل",
+				practice1: "الحوكمة والمخاطر والامتثال",
+				practice2: "العقود الذكية والهياكل التعاقدية المؤتمتة",
+				practice3: "الترميز والتصميم القانوني للأصول الرقمية",
+				practice4: "هندسة التحكم للعمليات المعقدة",
+				coordinationTitle: "التنسيق التقني",
+				name: "— Pedro Soccol —",
+				role: "خبير قانوني. هندسة قانونية وحوكمة للأنظمة الحرجة.",
+				contactTitle: "التواصل",
+				emailLabel: "cognisynth.sol@gmail.com",
+				linkedinLabel: "LinkedIn: br.linkedin.com/in/pedrosoccol",
+				domainTitle: "النطاق",
+				domainValue: "cognisynthlegal.com"
+			}
+		};
+
+		const translatableNodes = document.querySelectorAll("[data-i18n]");
+		const languageButtons = document.querySelectorAll(".lang-btn");
+
+		function applyLanguage(languageCode) {
+			const dictionary = translations[languageCode] || translations["pt-BR"];
+			document.documentElement.lang = languageCode;
+			document.documentElement.dir = languageCode === "ar-SA" ? "rtl" : "ltr";
+
+			translatableNodes.forEach((node) => {
+				const key = node.dataset.i18n;
+				if (dictionary[key]) {
+					node.textContent = dictionary[key];
+				}
+			});
+
+			languageButtons.forEach((button) => {
+				const isActive = button.dataset.lang === languageCode;
+				button.classList.toggle("is-active", isActive);
+				button.setAttribute("aria-pressed", String(isActive));
+			});
+		}
+
+		languageButtons.forEach((button) => {
+			button.addEventListener("click", () => {
+				applyLanguage(button.dataset.lang);
+			});
+		});
+	</script>
 </body>
 
 </html>
